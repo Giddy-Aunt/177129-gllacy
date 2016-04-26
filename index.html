@@ -6,12 +6,12 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header container">
-			<div class="header-logo">
-				<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
-			</div>
+		<header class="main-header container clearfix">
 			<nav class="main-menu">
 				<ul>
+					<li class="header-logo">
+						<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
+					</li>
 					<li>
 						<a href="#">Каталог</a>
 						<ul class="submenu">
@@ -41,13 +41,13 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-					<a class="btn user-btn search-btn" href="#">Поиск</a>
-					<a class="btn user-btn login-btn" href="#">Вход</a>
-					<a class="btn user-btn basket-btn" href="#">Пусто</a>
+					<a class="user-btn search-btn" href="#">Поиск</a>
+					<a class="user-btn login-btn" href="#">Вход</a>
+					<a class="user-btn basket-btn" href="#">Пусто</a>
 			</div>
 			<div class="header-contacts">
-					С 10 до 20 ежедневно<br>
-				<span class="bold">8 812 450 25 25</span>
+				С 10 до 20 ежедневно<br>
+				<span class="phone">8 812 450 25 25</span>
 			</div>
 			<div class="box popup popup-search">
 				<form action="#" method="get">
@@ -64,7 +64,7 @@
 				</form>
 			</div>
 		</header>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="slider">
 				<input type="radio" id="btn-1" name="toggle" checked>
 				<input type="radio" id="btn-2" name="toggle">
@@ -76,34 +76,34 @@
 				</div> 
 				<div class="slider-inner">
 					<div class="slider-slides">
-						<div class="slide-1">
+						<div class="slide slide-1">
 							<p>Крем-брюле и пломбир с малиновым джемом</p>
 							<a class="btn" href="#">Давайте оба!</a>
 						</div>
-						<div class="slide-2">
+						<div class="slide slide-2">
 							<p>Шоколадный пломбир и лимонный сорбет</p>
 							<a class="btn" href="#">Давайте оба!</a>
 						</div>
-						<div class="slide-3">
+						<div class="slide slide-3">
 							<p>Пломбир с помадкой и клубничный щербет</p>
 							<a class="btn" href="#">Давайте оба!</a>
 						</div>
 					</div> 
 				</div>
 			</div>
-			<div class="index-content">
-				<article class="box banner-1">
+			
+				<article class="box banner banner-1">
 					<h2>Малинка даром!</h2>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-					<a class="btn" href="#">Хочу малинку!</a>
+					<a class="btn" href="#">Хочу варенье!</a>
 				</article>
-				<article class="box banner-2">
+				<article class="box banner banner-2">
 					<h2>Шоколадки даром!</h2>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
 					<a class="btn" href="#">Хочу шоколадки!</a>
 				</article>
-			</div>
-			<div class="index-content">
+			
+			<div class="catalog">
 				<article class="product-card product-card-2">
 					<a href="#">
 						<div class="frame">
@@ -176,34 +176,34 @@
 						<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 					</li>
 					<li>
-						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
 					</li>
 					<li>
-						<p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+						<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 					</li>
 					<li>
 						<p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
 					</li>
 				</ul>
 			</div>
-			<div class="index-content">
-				<div class="news">
+	
+				<div class="box box-news">
 					<h2>Новое в нашем блоге</h2>
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
 				</div>
-				<div class="subscription">
+				<div class="box box-subscription">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 					<form action="#" method="post">
 						<input type="text" id="email-field" name="email" placeholder="Электронная почта">
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 				</div>
-			</div>
+
 		</div>
 		<div class="map">
 			<img width="1200" src="img/map.jpg" alt="Наш офис на карте">
 		</div>
-		<footer class="main-footer container">
+		<footer class="main-footer container clearfix">
 			<div class="footer-social">
 				<a class="social-btn social-btn-tw" href="#">Твиттер</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -211,20 +211,18 @@
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 			</div>
 			<nav class="footer-navigation">
-				<ul class="footer-navigation-left">
+				<ul>
 					<li>
 						<a class="important" href="#">Для поставщиков</a>
 					</li>
 					<li>
-					<a href="#">О производстве</a>
+						<a href="#">О производстве</a>
 					</li>
-				</ul>
-				<ul class="footer-navigation-right">
 					<li>
 						<a href="#">Наши документы</a>
 					</li>
 					<li>
-					<a href="#">Экологические стандарты</a>
+						<a href="#">Экологические стандарты</a>
 					</li>
 				</ul>
 			</nav>

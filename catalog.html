@@ -6,12 +6,14 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header container">
+		<header class="main-header container clearfix">
 			<nav class="main-menu">
-				<a class="header-logo" href="index.html">
-					<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
-				</a>
 				<ul>
+					<li class="header-logo">
+						<a href="index.html">
+							<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
+						</a>
+					</li>
 					<li>
 						<a href="#">Каталог</a>
 						<ul class="submenu">
@@ -41,13 +43,13 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a class="btn user-btn search-btn" href="#">Поиск</a>
-				<a class="btn user-btn login-btn" href="#">Вход</a>
-				<a class="btn user-btn basket-btn" href="#">2 товара</a>
+				<a class="user-btn search-btn" href="#">Поиск</a>
+				<a class="user-btn login-btn" href="#">Вход</a>
+				<a class="user-btn basket-btn" href="#">2 товара</a>
 			</div>
 			<div class="header-contacts">
 				С 10 до 20 ежедневно<br>
-				<span class="bold">8 812 450 25 25</span>
+				<span class="phone">8 812 450 25 25</span>
 			</div>
 			<nav class="breadcrumbs">
 				<ul>
@@ -160,7 +162,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="btn user-btn filters-btn" type="submit">Применить</button>
+					<button class="user-btn filters-btn" type="submit">Применить</button>
 				</form>
 			</section>
 			<section class="catalog">
@@ -357,8 +359,7 @@
 					</div>				
 				</article>						
 			</section>
-				<div class="paginator">
-					<ul>
+					<ul class="paginator">
 						<li>
 							<a href="#">&lt;</a>
 						</li>
@@ -381,9 +382,8 @@
 						<a href="#2">&gt;</a>
 						</li>
 					</ul>
-				</div>
-			</div>
-		<footer class="main-footer container">
+		</div>
+		<footer class="main-footer container clearfix">
 			<div class="footer-social">
 				<a class="social-btn social-btn-tw" href="#">Твиттер</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -413,14 +413,6 @@
 					<img width="108" height="38" src="img\htmlacademylogo.svg" alt="HTML Academy">
 				</a>
 				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
-			</div>
-			<div class="box footer-contacts">
-				<p>Адрес главного офиса и офлайн-магазина:<br>
-				<span class="bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-				<p>Для заказов по телефону:<br>
-				<span class="bold">8 812 450-25-25</span><br>
-				(с 10 до 20 ежедневно)</p>
-				<a class="btn" href="#">Форма обратной связи</a>
 			</div>
 		</footer>
 	</body>
