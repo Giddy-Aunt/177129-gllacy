@@ -7,14 +7,12 @@
 	</head>
 	<body>
 		<header class="main-header container clearfix">
-			<nav class="main-menu">
-				<ul>
-					<li class="header-logo">
-						<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
-					</li>
+			<nav class="main-navigation">
+				<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
+				<ul class="main-menu">
 					<li>
 						<a href="#">Каталог</a>
-						<ul class="submenu">
+						<ul class="sub-menu">
 							<li>
 								<a class="important" href="#">Новинки</a>
 							</li>
@@ -41,13 +39,13 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-					<a class="user-btn search-btn" href="#">Поиск</a>
-					<a class="user-btn login-btn" href="#">Вход</a>
-					<a class="user-btn basket-btn" href="#">Пусто</a>
-			</div>
-			<div class="header-contacts">
-				С 10 до 20 ежедневно<br>
-				<span class="phone">8 812 450 25 25</span>
+				<a class="user-btn search-btn" href="#">Поиск</a>
+				<a class="user-btn login-btn" href="#">Вход</a>
+				<a class="user-btn basket-btn" href="#">Пусто</a>
+				<p class="header-contacts">
+					С 10 до 20 ежедневно<br>
+					<span class="phone">8 812 450 25 25</span>
+				</p>
 			</div>
 			<div class="box popup popup-search">
 				<form action="#" method="get">
@@ -64,7 +62,7 @@
 				</form>
 			</div>
 		</header>
-		<div class="container clearfix">
+		<div class="container">
 			<div class="slider">
 				<input type="radio" id="btn-1" name="toggle" checked>
 				<input type="radio" id="btn-2" name="toggle">
@@ -91,7 +89,7 @@
 					</div> 
 				</div>
 			</div>
-			
+			<div class="clearfix">
 				<article class="box banner banner-1">
 					<h2>Малинка даром!</h2>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -102,12 +100,12 @@
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
 					<a class="btn" href="#">Хочу шоколадки!</a>
 				</article>
-			
+			</div>
 			<div class="catalog">
 				<article class="product-card product-card-2">
 					<a href="#">
 						<div class="frame">
-							<img width="264" src="img\icecream1.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
+							<img width="264" height="264"src="img\icecream1.jpg" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
 						</div>
 						<h2 class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
 					</a>
@@ -123,7 +121,7 @@
 				<article class="product-card product-card-1">
 					<a href="#">
 						<div class="frame">
-							<img width="264" src="img\icecream2.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада">
+							<img width="264" height="264"src="img\icecream2.jpg" alt="Сливочно-кофейное мороженое с кусочками шоколада">
 						</div>
 						<h2 class="product-name">Сливочно-кофейное с кусочками шоколада</h2>
 					</a>
@@ -139,7 +137,7 @@
 				<article class="product-card product-card-3">
 					<a href="#">
 						<div class="frame">
-							<img width="264" src="img\icecream3.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
+							<img width="264" height="264"src="img\icecream3.jpg" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
 						</div>
 						<h2 class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</h2>
 					</a>
@@ -155,7 +153,7 @@
 				<article class="product-card product-card-4">
 					<a href="#">
 						<div class="frame">
-							<img width="264" src="img\icecream4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+							<img width="264" height="264"src="img\icecream4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
 						</div>
 						<h2 class="product-name">Сливочное крем-брюле с карамельной подливкой</h2>
 					</a>
@@ -186,7 +184,7 @@
 					</li>
 				</ul>
 			</div>
-	
+			<div class="clearfix">
 				<div class="box box-news">
 					<h2>Новое в нашем блоге</h2>
 					<a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -198,7 +196,7 @@
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 				</div>
-
+			</div>
 		</div>
 		<div class="map">
 			<img width="1200" src="img/map.jpg" alt="Наш офис на карте">

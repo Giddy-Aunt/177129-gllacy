@@ -38,29 +38,26 @@ a {
 }
 
 .container {
-	width: 1146px;
+	box-sizing:border-box;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 27px;
 		
 	outline: 1px solid red;
 }
 
-.popup, .submenu {
+.popup {
 	position: absolute;
 	display: none;
 }
 
-.main-menu > ul > li {
-	display: inline-block;
-	vertical-align: top;
-}
 
 .main-header {
-	min-height: 105px;
+	min-height: 120px;
 	padding-top: 10px;
 }
 
-.main-menu {
+.main-navigation {
 	float: left;
 	width: 700px;
 	
@@ -70,16 +67,31 @@ a {
 	outline: 1px solid red;
 }
 
-.main-menu > ul > li {
+.main-menu {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.main-menu > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+}
+
+.sub-menu {
+	position: absolute;
+	display: none;
+}
+
+.main-menu :hover  .sub-menu {
+	display: block;
 }
 
 .user-block {
 	float: right;
 	width: 400px;
-	margin-top: 20px;
 	
 	outline: 1px solid red;
 	
@@ -131,9 +143,9 @@ a {
 .slide {
 	float: left;
 	width: 700px;
-	margin-top: 280px;
+	margin-top: 270px;
 	text-align: center;
-	vertical-align: bottom;
+
 }
 
 .slider input {
@@ -153,10 +165,11 @@ a {
 
 .banner {
 	position: relative;
-	width: 530px;
-	min-height: 180px;
-	margin-bottom: 43px;
-	padding: 25px 15px;
+	box-sizing:border-box;
+	width: 560px;
+	min-height: 230px;
+	margin-bottom: 40px;
+	padding: 25px 18px;
 	
 	
 	
@@ -164,7 +177,7 @@ a {
 }
 
 .banner p {
-	margin-top: 30px;
+	margin-top: 25px;
 	font-size: 18px;
 	line-height: 22px;
 }	
@@ -218,7 +231,7 @@ a {
 
 .price {
 	position: absolute;
-	bottom: 75px;
+	top: 215px;
 	left: 0;
 	font-size: 45px;
 }
@@ -226,7 +239,7 @@ a {
 .about-us-box {
 	margin-bottom: 40px;
 	padding-top: 25px;
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 	padding-left: 20px;
 	font-size: 0;
 	outline: 1px solid green;
@@ -253,9 +266,10 @@ a {
 }
 
 .box-news {
+	box-sizing:border-box;
 	float: left;
-	width: 520px;
-	min-height: 170px;
+	width: 560px;
+	min-height: 220px;
 	margin-bottom: 35px;
 	padding: 25px 20px;
 	outline: 1px solid green;
@@ -273,9 +287,10 @@ a {
 }
 
 .box-subscription {
+	box-sizing:border-box;
 	float: right;
-	width: 520px;
-	min-height: 160px;
+	width: 560px;
+	min-height: 220px;
 	margin-bottom: 35px;
 	padding: 30px 20px;
 	
