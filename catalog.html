@@ -3,23 +3,25 @@
 	<head>
 			<meta charset="utf-8">
 			<title>Сливочное мороженое</title>
-		<link href="css/style.css" rel="stylesheet">
+		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header container clearfix">
 			<nav class="main-navigation">
 				<a class="header-logo" href="index.html">
 					<img width="154" height="64" src="img\logo.svg" alt="Gllacy Shop">
 				</a>
 				<ul class="main-menu">
-					<li>
+					<li class="current">
 						<a href="#">Каталог</a>
 						<ul class="sub-menu">
-							<li>
-								<a class="important" href="#">Новинки</a>
+							<li class="important">
+								<a href="#">Новинки</a>
 							</li>
 							<li>
-								<a href="gllacy-catalog.html">Сливочное</a>
+								<a class="current">Сливочное</a>
 							</li>
 							<li>
 								<a href="#">Щербеты</a>
@@ -36,46 +38,30 @@
 						<a href="#">Доставка и оплата</a>
 					</li>
 					<li>
-						<a href="#">О компании</a>
+						<a href="#">О Компании</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a class="user-btn search-btn" href="#">Поиск</a>
-				<a class="user-btn login-btn" href="#">Вход</a>
-				<a class="user-btn basket-btn" href="#">2 товара</a>
+				<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
+				<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
+				<a class="user-btn basket-btn" href="#"><span class="icon-basket"></span>2 товара</a>
 				<p class="header-contacts">
 					С 10 до 20 ежедневно<br>
-					<span class="phone">8 812 450 25 25</span>
+					<span class="phone">8 812 450-25-25</span>
 				</p>
 			</div>
-			<nav class="breadcrumbs">
-				<ul>
-					<li>
-						<a href="index.html">Главная</a>
-					</li>
-					<li>
+			<ul class="breadcrumbs">
+				<li>
+					<a href="index.html">Главная</a>
+				</li>
+				<li>
 						<a href="#">Каталог</a>
-					</li>
-					<li>
-						<a class="current" href="#">Сливочное</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="box popup popup-search">
-				<form action="#" method="get">
-					<input type="search" id="search-field" name="search" placeholder="Что ищем?">
-				</form>
-			</div>
-			<div class="box popup popup-login">
-				<form action="#" method="post">
-					<input type="text" id="login-field" name="login" placeholder="Электронная почта">
-					<input type="password" id="password-field" name="password" placeholder="Пароль">
-					<a class="btn" href="#">Войти</a>
-					<a href="#">Забыли пароль?</a>
-					<a href="#">Новая регистрация</a>
-				</form>
-			</div>
+				</li>
+				<li>
+					<a class="current" href="#">Сливочное</a>
+				</li>
+			</ul>
 			<div class="box popup popup-basket">
 				<table class="purchase">
 					<tr>
@@ -97,7 +83,7 @@
 				<a class="btn" href="#">Оформить заказ</a>
 			</div>
 		</header>
-		<div class="container">
+		<div class="container clearfix">
 			<h1 class="page-title">Сливочное мороженое</h1>
 			<section class="filters">
 				<form action="#" method="get">
@@ -172,10 +158,9 @@
 							<h2 class="product-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310 &#x20BD;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">310 &#x20BD;</span><span class="mass-unit"> &#47; кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -188,10 +173,9 @@
 						<h2 class="product-name">Сливочно-кофейное с кусочками шоколада</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">310</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -204,10 +188,9 @@
 						<h2 class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">310</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -220,10 +203,9 @@
 						<h2 class="product-name">Сливочное крем-брюле с карамельной подливкой</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">310</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -236,10 +218,9 @@
 						<h2 class="product-name">Сливочное с брусничным джемом </h2>
 					</a>
 					<div class="price">
-						<span class="price-value">325 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">325</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -252,10 +233,9 @@
 						<h2 class="product-name">Сливочно-черничное с цельными ягодами черники</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">410 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">410</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -268,10 +248,9 @@
 						<h2 class="product-name">Сливочно-лимонное с карамельной присыпкой</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">375 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">375</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -284,10 +263,9 @@
 						<h2 class="product-name">Сливочное с шоколадной стружкой</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">320 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">320</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -300,10 +278,9 @@
 						<h2 class="product-name">Сливочно-ванильное с кусочками шоколада</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">440 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">440</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -316,10 +293,9 @@
 						<h2 class="product-name">Сливочноe с ментоловым сиропом</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">435 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">435</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -332,10 +308,9 @@
 						<h2 class="product-name">Сливочное с кусочками черного шоколада</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">355 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">355</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>
@@ -348,70 +323,83 @@
 						<h2 class="product-name">Сливочное с мятным сиропом</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">420 &#8381;</span><span class="mass-unit"> &frasl; кг</span>
+						<span class="price-value">420</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
-					<div class="best">
-					</div>
+
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>				
 				</article>						
 			</section>
 				<ul class="paginator">
-					<li>
-						<a href="#">&lt;</a>
+					<li class="page-number disabled">
+						<a href="#"></a>
 					</li>
-					<li>
-						<a href="#1">1</a>
+					<li class="page-number current">
+						<a>1</a>
 					</li>
-					<li>
+					<li class="page-number">
 						<a href="#2">2</a>
 					</li>
-					<li>
+					<li class="page-number">
 						<a href="#3">3</a>
 					</li>
-					<li>
+					<li  class="page-number">
 						<a href="#4">4</a>
 					</li>
-					<li>
+					<li class="page-number">
 						<a href="#5">5</a>
 					</li>
-					<li>
-					<a href="#2">&gt;</a>
+					<li class="page-number">
+					<a href="#2"></a>
 					</li>
 				</ul>
 		</div>
 		<footer class="main-footer container clearfix">
 			<div class="footer-social">
-				<a class="social-btn social-btn-tw" href="#">Твиттер</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+				<a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a>
+				<a class="social-btn social-btn-inst" href="#"><span class="icon-instagram"></span>Инстаграм</a>
+				<a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+				<a class="social-btn social-btn-vk" href="#"><span class="icon-vkontakte"></span>Вконтакте</a>
 			</div>
 			<nav class="footer-navigation">
-				<ul class="footer-navigation-left">
-					<li>
-						<a class="important" href="#">Для поставщиков</a>
+				<ul>
+					<li class="important">
+						<a href="#">Для поставщиков</a>
 					</li>
 					<li>
-					<a href="#">О производстве</a>
+						<a href="#">О производстве</a>
 					</li>
 				</ul>
-				<ul class="footer-navigation-right">
+				<ul>
 					<li>
 						<a href="#">Наши документы</a>
 					</li>
 					<li>
-					<a href="#">Экологические стандарты</a>
+						<a href="#">Экологические стандарты</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="footer-copyright">
 				<a href="https://htmlacademy.ru">
-					<img width="108" height="38" src="img\htmlacademylogo.svg" alt="HTML Academy">
+					<img class="copyright-logo" width="108" height="38" src="img\htmlacademylogo.svg" alt="HTML Academy">
 				</a>
-				<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
+				<p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 			</div>
 		</footer>
-	</body>
+			<div class="popup popup-search">
+				<form action="#" method="get">
+					<input type="search" id="search-field" name="search" placeholder="Что ищем?">
+				</form>
+			</div>
+			<div class="popup popup-login">
+				<form action="#" method="post">
+					<input type="text" id="login-field" name="login" placeholder="Электронная почта">
+					<input type="password" id="password-field" name="password" placeholder="Пароль">
+					<a class="btn" href="#">Войти</a>
+					<a href="#">Забыли пароль?</a>
+					<a href="#">Новая регистрация</a>
+				</form>
+			</div>
+		</body>
 </html>
