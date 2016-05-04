@@ -413,6 +413,7 @@ a {
 	float: left;
 	width: 700px;
 	text-align: center;
+	margin-top: 270px;
 }
 
 .slider input {
@@ -705,16 +706,45 @@ a {
 }
 
 .box-subscription {
+	position: relative;
 	box-sizing:border-box;
 	float: right;
-	width: 560px;
-	min-height: 220px;
+	width: 550px;
+	min-height: 210px;
+	margin-top: 5px;
 	margin-bottom: 40px;
 	padding-left: 20px;
 	
 	border-radius: 12px;
 	color: 5a5a5a;
 	background: #f8f7f4;
+}
+
+.box-subscription::after {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	z-index: -10;
+	
+	width: 560px;
+	min-height: 220px;
+	
+	border-radius: 12px;
+	background: repeating-linear-gradient(
+		-45deg, 
+		#f8f7f4 0, 
+		#f8f7f4 10px, 
+		#92cdff 10px,
+		#92cdff 20px,
+		#f8f7f4 20px,
+		#f8f7f4 30px,
+		#fe9e90 30px,
+		#fe9e90 40px);
+}
+
+.box-subscription .btn {
+	padding: 10px 20px;
 }
 
 .box-subscription p {
@@ -1035,7 +1065,7 @@ a {
 
 .popup-feedback {
 	position: fixed;
-	top: 340px;
+	top: 25%;
 	left: 50%;
 	box-sizing: border-box;
 	width: 480px;
@@ -1073,7 +1103,6 @@ a {
 	top: 15px;
 	right: 15px;
 
-	
 	width: 22px;
 	height: 22px;
 
@@ -1171,10 +1200,143 @@ a {
 }
 
 .popup-login a:hover,
-.popup-login a:active {
+.purchase a:hover,
+.popup-login a:active,
+.purchase a:active {
+	text-decoration: none;
 	color: #e84d37;
 	border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
+
+.popup-basket {
+	top: 58px;
+	right: 27px;
+	padding: 0 15px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	
+	
+	font-size: 13px;
+	line-height: 16px;
+	border-radius: 6px;
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+	
+	z-index: 50;
+}
+
+.purchase td {
+	padding-top: 8px;
+	padding-bottom: 30px;
+}
+
+.remove {
+	width: 20px;
+}
+
+.purchase-product {
+	position: relative;
+	width: 270px;
+	padding-left: 50px;
+}
+
+.purchase-product::before {
+	content: "";
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 35px;
+	height: 35px;
+	
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 120%;
+	
+	z-index: 51;
+	
+}
+
+.first-purchase .purchase-product::before  {
+	background-image: url(../img/icecream1.jpg);
+}
+
+.second-purchase .purchase-product::before  {
+	background-image: url(../img/icecream3.jpg);
+}
+
+.purchase-quantity {
+	width: 75px;
+	
+	text-align: right;
+}
+
+.purchase-price {
+	width: 75px;
+	
+	color: #999999;
+} 
+
+.purchase-cost {
+	width: 70px;
+	
+	
+}
+
+.full-purchase-cost {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	text-align: right;
+	
+	border-top: 1px solid #cacac7;
+}
+
+
+.popup-basket .remove-btn {
+	position: relative;
+
+	width: 14px;
+	height: 14px;
+
+	font-size: 0;
+
+	background-color: #f8f7f4;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+
+.remove-btn::before,
+.remove-btn::after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 0;
+
+	width: 14px;
+	height: 1px;
+	background-color: #000000;
+}
+
+
+.remove-btn::before {
+  transform: rotate(45deg);
+}
+
+.remove-btn::after {
+  transform: rotate(-45deg);
+}
+
+.popup-basket  .btn {
+	position: absolute;
+	right: 15px;
+	bottom: 20px;
+	
+}
+
 
 input[type="text"],
 input[type="password"],
@@ -1196,7 +1358,7 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 input[type="search"]:hover,
 textarea[name="comment"]:hover {
-	border: 2px solid #b2b2b2;
+	box-shadow: inset 0 0 0 1px #b2b2b2;
 }
 
 input[type="text"]:focus,
@@ -1204,5 +1366,6 @@ input[type="password"]:focus,
 input[type="search"]:focus,
 textarea[name="comment"]:focus {
 	color: #5b9ddf;
-	border: 2px solid #5b9ddf;
+	border: 1px solid #5b9ddf;
+	box-shadow: inset 0 0 0 1px #5b9ddf;
 }
