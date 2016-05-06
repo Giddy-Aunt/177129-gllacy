@@ -50,17 +50,6 @@ a {
 	box-sizing:border-box;
 	width: 1200px;
 	margin: 0 auto;
-	padding: 0 27px;
-}
-
-.page-title {
-	margin: 0;
-	margin-bottom: 30px;
-	
-	color: #ffffff;
-	font-size: 35px;
-	line-height: 41px;
-	font-weight: 700;
 }
 
 .user-btn {
@@ -123,6 +112,7 @@ a {
 .main-header {
 	position: relative;
 	min-height: 120px;
+	padding: 0 27px;
 	padding-top: 23px;
 	
 	color: #ffffff;
@@ -210,9 +200,8 @@ a {
 .main-menu > li {
 	position: relative;
 	display: inline-block;
-	
-	
-	padding-bottom: 50px;
+		
+	padding-bottom: 30px;
 	
 	vertical-align: top;
 }
@@ -391,13 +380,26 @@ a {
 	font-weight: 900;
 }
 
+.page-navigation {
+	padding: 0 27px;
+	
+	color: #ffffff;
+}
+
+.page-title {
+	margin: 0;
+	margin-bottom: 30px;
+	
+	color: #ffffff;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
 .breadcrumbs {
 	margin: 0;
 	padding: 0;
-	float: left;
 	width: 700px;
-	margin: 0;
-	margin-top: 45px;
 	
 	font-size: 14px;
 	line-height: 16px;
@@ -541,6 +543,7 @@ a {
 
 .catalog {
 	font-size: 0;
+	padding: 0 17px;
 }
 
 .product-card {
@@ -548,8 +551,9 @@ a {
 	display: inline-block;
 	vertical-align: top;
 	width: 267px;
-	margin-bottom: 30px;
-	margin-right: 26px;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-right: 6px;
 	
 	text-align: center;
 	
@@ -595,8 +599,8 @@ a {
 
 .price {
 	position: absolute;
-	top: 208px;
-	left: 0;
+	top: 218px;
+	left: 10px;
 	
 	font-size: 45px;
 	font-weight: 700;
@@ -624,8 +628,8 @@ a {
 	content: "";
 	
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: 10px;
+	top: 10px;
 	width: 62px;
 	height: 62px;
 	
@@ -635,7 +639,7 @@ a {
 
 .product-card:hover {
 	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 1px 1px 0 0;
+	border-radius: 6px 6px 0 0;
 }
 
 .product-card:hover .quick-view {
@@ -647,8 +651,9 @@ a {
 	display: none;
 	position: absolute;
 	left: 0;
+	bottom: -76px;
 	z-index: 10;
-	width: 267px;
+	width: 287px;
 	padding: 15px 0;
 	
 	text-align: center;
@@ -671,7 +676,12 @@ a {
 	background-color: rgba(255, 255, 255, 0.2);
 }*/
 
+.column-container {
+	padding: 0 27px;
+}
+
 .about-us-box {
+	margin: 0 27px;
 	margin-bottom: 40px;
 	padding: 20px;
 	font-size: 0;
@@ -842,6 +852,7 @@ a {
 	box-sizing: border-box;
 	width: 860px;
 	height: 135px;
+	padding: 0 27px;
 	margin-bottom: 30px;
 	
 	font-size: 16px;
@@ -958,6 +969,7 @@ a {
 
 .main-footer {
 	position: relative;
+	padding: 0 27px;
 	padding-bottom: 20px;
 	padding-top: 35px;
 	
@@ -1128,7 +1140,7 @@ a {
 }
 
 .popup {
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	color: #323232;
 	background-color: #f8f7f4;
@@ -1408,7 +1420,6 @@ a {
 	bottom: 20px;
 	
 }
-
 
 input[type="text"],
 input[type="password"],
