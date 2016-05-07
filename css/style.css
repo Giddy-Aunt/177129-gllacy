@@ -440,7 +440,9 @@ a {
 
 .slider {
     position: relative;
+	box-sizing: border-box;
 	height: 490px;
+	padding-top: 270px;
 	margin-bottom: 37px;
 }
 
@@ -456,26 +458,17 @@ a {
 }
 
 
-.slider-inner {
+.slide {
+	display: none;
+	
 	width: 700px;
 	margin: 0 auto;
-	height: 100%;
-	overflow: hidden;
-}
-
-.slider-slides {
-	width: 300%;
-}
-
-.slide {
-	float: left;
-	width: 700px;
 	text-align: center;
-	margin-top: 270px;
+
 }
 
-.slider input {
-	display: none;
+body > input[type="radio"] {
+  display: none;
 }
 
 .slider .btn {
@@ -484,9 +477,99 @@ a {
 	vertical-align: bottom;
 	font-size: 32px;
 	line-height: 44px;
-	text-shadow: 0 2px 5px #a0200b;
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 	
 	border-radius: 35px;
+	background-image: linear-gradient(#e74a35, #f26843);
+	box-shadow: 0 2px 2px 0 rgba(85, 8, 0, 0.64);
+}
+
+.slider .btn:hover {
+	background-image: linear-gradient(#f58669, #ec6f5e);
+	box-shadow: 0 1px 2px 0 #ac1000;
+}
+
+.slider .btn:active {
+	background-image: linear-gradient(#d74632, #e1613e);
+	box-shadow: inset 0 2px 2px 0 #942718;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 25px;
+  left: 27px;
+  z-index: 10;
+
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  
+  vertical-align: top;
+  
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.slider-controls label:hover {
+	background-color: rgba(225, 225, 225, 0.4)
+}
+
+#btn-1:checked ~ .site-wrapper .slide-1,
+#btn-2:checked ~ .site-wrapper .slide-2,
+#btn-3:checked ~ .site-wrapper .slide-3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+.site-wrapper {
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	
+	transition: background-image 0.5s ease, background-color 0.5s ease;
+	
+}
+
+.site-wrapper:before,
+.site-wrapper:after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper:before,
+.site-wrapper:after {
+  background-image: url("../img/slider2-gradient.png");
+}
+
+.site-wrapper:after {
+  background-image: url("../img/slider3-gradient.png");
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/slider1-gradient.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/slider2-gradient.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/slider3-gradient.png");
 }
 
 .banner {
@@ -494,7 +577,7 @@ a {
 	box-sizing: border-box;
 	width: 560px;
 	min-height: 230px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	padding-left: 18px;
 	padding-right: 15px;
 	padding-bottom: 70px;
@@ -552,7 +635,7 @@ a {
 	vertical-align: top;
 	width: 267px;
 	padding: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	margin-right: 6px;
 	
 	text-align: center;
@@ -806,7 +889,7 @@ a {
 	position: absolute;
 	top: -5px;
 	left: -5px;
-	z-index: -10;
+
 	
 	width: 560px;
 	min-height: 220px;
@@ -822,6 +905,8 @@ a {
 		#f8f7f4 30px,
 		#fe9e90 30px,
 		#fe9e90 40px);
+		
+	z-index: -10;
 }
 
 .box-subscription .btn {
@@ -991,61 +1076,53 @@ a {
 
 .social-btn {
 	display: inline-block;
-	width: 32px;
-	height: 32px;
+	width: 30px;
+	height: 30px;
 	margin-right: 12px;
 	
 	vertical-align: top;
 	text-align: center;
 	
-	color: #849d8f;
-	background-color: #e6ebe9;
-	border: 3px solid #bcc9c2;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: transparent;
+	border: 3px solid rgba(255, 255, 255, 0.5);
 	border-radius: 50%;
 }
 
 .social-btn:hover {
-	background-color: #ffffff;
-	border: 3px solid #ccd7d1;
+	color: #ffffff;
+	border: 3px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-btn:active {
-	background-color: #e9e9e9;
-	border: 3px solid #d9e1dd;
+	color: #ffffff;
+	border: 3px solid rgba(255, 255, 255, 0.7);
 	box-shadow: inset 0 2px 1px 0 #888888;
 }
 
 .icon-vkontakte:before {
-    content: "\e90f";
+    content: "\e90d";
 	
-	padding-top: 3px;
-	
-	font-size: 28px;
+	font-size: 30px;
 	font-family: 'icomoon';
 }
 
 .icon-facebook:before {
-    content: "\e90b";
+    content: "\e90a";
 	
-	padding-top: 6px;
-	
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'icomoon';
 }
 .icon-instagram:before {
-    content: "\e90d";
+    content: "\e90b";
 	
-	padding-top: 8px;
-	
-	font-size: 17px;
+	font-size: 30px;
 	font-family: 'icomoon';
 }
 .icon-twitter:before {
     content: "\e90c";
 	
-	padding-top: 6px;
-	
-	font-size: 20px;
+	font-size: 30px;
 	font-family: 'icomoon';
 }
 
