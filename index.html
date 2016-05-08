@@ -51,7 +51,10 @@
 					<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
 					<div class="popup search-popup">
 						<form action="#" method="get">
-							<input type="search" id="search-field" name="search" placeholder="Что ищем?">
+							<fieldset>
+							<input type="search" id="search-field" name="search" required>
+							<label for="search-field">Что ищем?</label>
+							</fieldset>
 						</form>
 					</div>
 				</li>
@@ -59,8 +62,14 @@
 					<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
 					<div class="popup login-popup">
 						<form action="#" method="post">
-							<input type="text" id="login-field" name="login" placeholder="Электронная почта">
-							<input type="password" id="password-field" name="password" placeholder="Пароль">
+							<fieldset>
+							<input type="text" id="login-field" name="login" required>
+							<label for="login-field">Электронная почта</label>
+							</fieldset>
+							<fieldset>
+							<input type="password" id="password-field" name="password" required>
+							<label for="password-field">Пароль</label>
+							</fieldset>
 							<a class="btn" href="#">Войти</a>
 							<a href="#">Забыли пароль?</a>
 							<a href="#">Новая регистрация</a>
@@ -196,7 +205,10 @@
 					<div class="box-subscription-inner">
 					<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
 					<form action="#" method="post">
-						<input type="text" id="email-field" name="email" placeholder="Электронная почта">
+						<fieldset>
+							<input type="text" id="email-field" name="email" required>
+							<label for="email-field">Электронная почта</label>
+						</fieldset>
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 					</div>
@@ -251,9 +263,18 @@
 			<div class="popup feedback-popup">
 				<h2>Мы обязательно вам ответим!</h2>
 				<form action="#" method="get">
-					<input type="text" id="feedback-name-field" name="name" placeholder="Как вас зовут?">
-					<input type="text" id="feedback-email-field" name="email" placeholder="Ваша почта ответа?">
-					<textarea id="comment-field" name="comment"> Напишите что-нибудь</textarea>
+					<fieldset>
+					<input type="text" id="feedback-name-field" name="name" required>
+					<label for="feedback-name-field">Как вас зовут?</label>
+					</fieldset>
+					<fieldset>
+					<input type="text" id="feedback-email-field" name="email" required>
+					<label for="feedback-email-field">Ваша почта ответа?</label>
+					</fieldset>
+					<fieldset>
+					<textarea id="comment-field" name="comment" required></textarea>
+					<label for="comment-field">Напишите что-нибудь</label>
+					</fieldset>
 					<button class="btn" type="submit">Отправить</button>
 					<button class="feedback-close-btn" type="button" title="Закрыть">Закрыть</button>
 				</form>

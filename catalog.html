@@ -47,7 +47,10 @@
 					<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
 					<div class="popup search-popup">
 						<form action="#" method="get">
-							<input type="search" id="search-field" name="search" placeholder="Что ищем?">
+							<fieldset>
+							<input type="search" id="search-field" name="search" required>
+							<label for="search-field">Что ищем?</label>
+							</fieldset>
 						</form>
 					</div>
 				</li>
@@ -55,8 +58,14 @@
 					<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
 					<div class="popup login-popup">
 						<form action="#" method="post">
-							<input type="text" id="login-field" name="login" placeholder="Электронная почта">
-							<input type="password" id="password-field" name="password" placeholder="Пароль">
+							<fieldset>
+							<input type="text" id="login-field" name="login" required>
+							<label for="login-field">Электронная почта</label>
+							</fieldset>
+							<fieldset>
+							<input type="password" id="password-field" name="password" required>
+							<label for="password-field">Пароль</label>
+							</fieldset>
 							<a class="btn" href="#">Войти</a>
 							<a href="#">Забыли пароль?</a>
 							<a href="#">Новая регистрация</a>

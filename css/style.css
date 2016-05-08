@@ -948,7 +948,7 @@ body > input[type="radio"] {
 
 .box-subscription .btn {
 	padding: 10px 20px;
-
+	margin-left: 5px;
 }
 
 .box-subscription p {
@@ -1538,7 +1538,7 @@ input[type="checkbox"]:checked + label:before {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.login-popup a:hover,
+.login-popup a:hover:not(.btn),
 .purchase a:hover,
 .login-popup a:active,
 .purchase a:active {
@@ -1694,9 +1694,10 @@ input[type="checkbox"]:checked + label:before {
 	
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 700;
 	
 	border: 1px solid #b2b2b2;
-	color: #999999;
+	color: #323232;
 	background: transparent;
 	border-radius: 5px;
 	outline: none;
@@ -1715,22 +1716,60 @@ input[type="checkbox"]:checked + label:before {
 .popup input[type="password"]:focus,
 .popup input[type="search"]:focus,
 .popup textarea[name="comment"]:focus {
-	font-weight: 700;
-	
-	color: #323232;
 	border: 1px solid #5b9ddf;
 	box-shadow: inset 0 0 0 1px #5b9ddf;
 }
 
+.box-subscription fieldset,
+.popup fieldset {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
 
-:focus::-webkit-input-placeholder {
+.box-subscription label,
+.popup label {
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 9px 15px;
+	
+	font-size: 16px;
+	line-height: 24px;
+	
+	color: #999999;
+}
+
+.box-subscription input:focus + label,
+.popup input:focus + label,
+.popup textarea:focus + label {
+	top: -25px;
+	
+	font-size: 11px;
+	line-height: 13px;
+	
+	color: #5b9ddf;
+}
+
+.box-subscription input:valid + label,
+.popup input:valid + label,
+.popup textarea:valid + label {
+	top: -25px;
+	
+	font-size: 11px;
+	line-height: 13px;
+}
+
+/*:focus::-webkit-input-placeholder {
 	color: transparent;
 
 }
 
 :focus::-moz-placeholder {
 	color: transparent
-}
+}*/
 
 @keyframes bounce {
   0%   {
