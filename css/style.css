@@ -954,9 +954,14 @@ body > input[type="radio"] {
 }
 
 .map {
-	text-align: center;
-	background: #f6f0d8;
+	background: transparent url("../img/map.jpg") no-repeat center center;
 	height: 430px;
+}
+
+.map iframe {
+	height: 430px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .filters {
@@ -1720,4 +1725,3 @@ input[type="checkbox"]:checked + label:before {
 :focus::-moz-placeholder {
 	color: transparent
 }
-
