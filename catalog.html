@@ -46,11 +46,11 @@
 				<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
 				<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
 				<a class="user-btn basket-btn" href="#"><span class="icon-basket"></span>2 товара</a>
-				<p class="header-contacts">
-					С 10 до 20 ежедневно<br>
-					<span class="phone">8 812 450-25-25</span>
-				</p>
 			</div>
+			<p class="header-contacts">
+				С 10 до 20 ежедневно<br>
+				<span class="phone">8 812 450-25-25</span>
+			</p>
 			<div class="popup popup-search">
 				<form action="#" method="get">
 					<input type="search" id="search-field" name="search" placeholder="Что ищем?">
@@ -105,7 +105,7 @@
 			</nav>
 			<section class="filters">
 				<form action="#" method="get">
-					<fieldset>
+					<fieldset class="sorting">
 						<legend>Сортировка</legend>
 						<select id="sorting-field" name="sorting">
 						<option value="popularity">по популярности</option>
@@ -114,11 +114,21 @@
 						<option value="fat-content">по жирности</option>
 						</select>
 					</fieldset>
-					<fieldset>
-						<legend>Цена</legend>
-					100 руб. - 500 руб.
-					</fieldset>
-					<fieldset>
+					<div class="price-range">
+						<div class="price-controls">
+							Цена:
+							<label class="min-price"><input type="text" name="min-price" value="100">руб. -</label>
+							<label class="max-price"><input type="text" name="max-price" value="500">руб.</label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+							<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+					</div>
+					<fieldset class="fat">
 						<legend>Жирность</legend>
 						<ul>
 							<li>
@@ -139,7 +149,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="topping">
 						<legend>Наполнители</legend>
 						<ul>
 							<li>
@@ -191,7 +201,7 @@
 						<h2 class="product-name">Сливочно-кофейное с кусочками шоколада</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
+						<span class="price-value">380</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
 
 					<div class="quick-view">
@@ -206,7 +216,7 @@
 						<h2 class="product-name">Сливочно-клубничное с присыпкой из белого шоколада</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
+						<span class="price-value">355</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
 
 					<div class="quick-view">
@@ -221,7 +231,7 @@
 						<h2 class="product-name">Сливочное крем-брюле с карамельной подливкой</h2>
 					</a>
 					<div class="price">
-						<span class="price-value">310</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
+						<span class="price-value">415</span><span class="icon-ruble"></span><span class="mass-unit">&#47;кг</span>
 					</div>
 
 					<div class="quick-view">
@@ -347,8 +357,7 @@
 					<div class="quick-view">
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>				
-				</article>						
-			</section>
+				</article>
 				<ul class="paginator">
 					<li class="page-number disabled">
 						<a href="#"></a>
@@ -372,6 +381,7 @@
 					<a href="#2"></a>
 					</li>
 				</ul>
+			</section>
 		</div>
 		<footer class="main-footer container clearfix">
 			<div class="footer-social">

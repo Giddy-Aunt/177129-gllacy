@@ -7,7 +7,7 @@ body {
 	line-height: 20px;
 	
 	color: #323232;
-	background: #849d8f /*url("../img/slider1-gradient.png") no-repeat 50% 0*/;
+	background: #849d8f;
 }
 
 a {
@@ -111,10 +111,9 @@ a {
 
 .main-header {
 	position: relative;
-	min-height: 120px;
 	padding: 0 27px;
 	padding-top: 23px;
-	
+	margin-bottom: 25px;
 	color: #ffffff;
 }
 
@@ -131,6 +130,7 @@ a {
 .main-menu {
 	margin: 0;
 	margin-left: 125px;
+	margin-top: 5px;
 
 	list-style: none;
 }
@@ -363,10 +363,9 @@ a {
 }
 
 .header-contacts {
-	float: right;
-	width: 400px;
-	margin-top: 18px;
-	margin-bottom: 0;
+	position: absolute;
+	top: 58px;
+	right: 27px;
 	
 	font-size: 14px;
 	line-height: 16px;
@@ -377,7 +376,7 @@ a {
 .header-contacts .phone {
 	font-size: 22px;
 	line-height: 30px;
-	font-weight: 900;
+	font-weight: 800;
 }
 
 .page-navigation {
@@ -388,7 +387,7 @@ a {
 
 .page-title {
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	
 	color: #ffffff;
 	font-size: 35px;
@@ -398,6 +397,7 @@ a {
 
 .breadcrumbs {
 	margin: 0;
+	margin-bottom: 5px;
 	padding: 0;
 	width: 700px;
 	
@@ -441,8 +441,8 @@ a {
 .slider {
     position: relative;
 	box-sizing: border-box;
-	height: 490px;
-	padding-top: 270px;
+	height: 510px;
+	padding-top: 290px;
 	margin-bottom: 37px;
 }
 
@@ -453,7 +453,7 @@ a {
 	
 	font-size: 60px;
 	line-height: 60px;
-	font-weight: 900;
+	font-weight: 800;
 	color: #ffffff;
 }
 
@@ -644,7 +644,7 @@ body > input[type="radio"] {
 }
 
 .inner-page .product-card {
-	margin-bottom: 35px;
+	margin-bottom: 15px;
 }
 
 .product-card:nth-child(4n) {
@@ -705,6 +705,7 @@ body > input[type="radio"] {
 	
 	font-family: 'icomoon';
 	font-size: 38px;
+	line-height: 38px;
 }
 
 .best-sellers .product-card::before {
@@ -935,10 +936,9 @@ body > input[type="radio"] {
 
 .filters {
 	box-sizing: border-box;
-	width: 860px;
 	height: 135px;
 	padding: 0 27px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	
 	font-size: 16px;
 	font-weight: 500;
@@ -950,23 +950,31 @@ body > input[type="radio"] {
 .filters ul {
 	list-style: none;
 	margin: 0;
+	padding: 0;
 }
 
 .filters li {
 	display: inline-block;
 	vertical-align: middle;
+	
+	margin-right: 20px;
 }
 
 .filters fieldset {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 40px;
-	padding: 10px;
+	margin-top: 38px;
+	margin-right: 15px;
+	padding: 9px 10px;
 	
 	border: none;
 	background-color: rgba(248, 247, 244, 0.2);
 	border-radius: 20px;
+}
+
+.filters fieldset:first-child:hover {
+	background-color: #ffffff;
 }
 
 .filters legend {
@@ -975,10 +983,150 @@ body > input[type="radio"] {
 	bottom: 45px;
 }
 
-.filters .user-btn {
+.filters-btn {
 	padding: 8px 24px;
+	margin-top: 38px;
+	
 	border: 2px solid #ffffff;
 	border-radius: 20px;
+}
+
+.filters select {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.filters select:hover {
+	color: #323232;
+}
+
+.filters input[type="radio"],
+.filters input[type="checkbox"] {
+	display: none;
+}
+
+.filters label {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.fat label::before,
+.topping label::before {
+	content: "";
+	
+	position: absolute;
+	left: 0;
+	
+	width: 18px;
+	height: 18px;
+		
+	border: 1px solid #ffffff;
+}
+
+.fat label:hover::before,
+.topping label:hover::before {
+	box-shadow: inset 0 0 0 1px #ffffff;
+}
+
+.fat label:before {
+	border-radius: 50%;
+}
+
+.topping label:before {
+	border-radius: 4px;
+}
+
+input[type="radio"]:checked + label:before {
+	content: "\f111";
+
+	font-size: 12px;	
+	font-family: 'icomoon';
+	text-align: center;
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\e909";
+	
+	font-size: 12px;	
+	font-family: 'icomoon';
+	text-align: center;
+
+}
+
+.price-range {
+	display: inline-block;
+	margin-top: 12px;
+	margin-right: 15px;
+	vertical-align: top;
+}
+
+.price-controls {
+	padding: 5px 15px;
+}
+
+.price-controls label {
+	display: inline-block;
+	padding: 0;
+	vertical-align: top;
+}
+
+.price-controls input[type="text"] {
+	width: 30px;
+	margin: 0;
+	padding: 0;
+
+	color: inherit;
+	font: inherit;
+
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+
+.range-controls {
+	position: relative;
+	width: 190px;
+	padding: 16px 15px;
+	
+	background-color: rgba(248, 247, 244, 0.2);
+	border-radius: 20px;
+}
+
+.range-controls .scale {
+	height: 4px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.range-controls .bar {
+  height: 4px;
+  margin-left: 40px;
+  margin-right: 70px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: 8px;
+	width: 20px;
+	height: 20px;
+
+	background: #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.range-toggle-min {
+	left: 40px;
+}
+
+.range-toggle-max {
+	right: 70px;
 }
 
 .paginator {
@@ -987,17 +1135,19 @@ body > input[type="radio"] {
 	text-align: right;
 	
 	margin: 0;
-	margin-top: 40px;
+	margin-top: 50px;
 	list-style: none;
 }
 
 .page-number {
 	position: relative;
 	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
 	width: 26px;
 	height: 26px;
+	margin-left: 4px;
+	
+	text-align: center;
+	vertical-align: middle;
 	
 	color: #ffffff;
 	text-decoration: none;
@@ -1064,7 +1214,7 @@ body > input[type="radio"] {
 
 .inner-page .main-footer  {
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .footer-social {
@@ -1078,7 +1228,7 @@ body > input[type="radio"] {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
-	margin-right: 12px;
+	margin-right: 15px;
 	
 	vertical-align: top;
 	text-align: center;
@@ -1498,10 +1648,11 @@ body > input[type="radio"] {
 	
 }
 
-input[type="text"],
-input[type="password"],
-input[type="search"],
-textarea[name="comment"] {
+.box-subscription input[type="text"],
+.popup input[type="text"],
+.popup input[type="password"],
+.popup input[type="search"],
+.popup textarea[name="comment"] {
 	padding: 9px 15px;
 	
 	font-size: 16px;
@@ -1514,17 +1665,19 @@ textarea[name="comment"] {
 	outline: none;
 }
 
-input[type="text"]:hover,
-input[type="password"]:hover,
-input[type="search"]:hover,
-textarea[name="comment"]:hover {
+.box-subscription input[type="text"]:hover,
+.popup input[type="text"]:hover,
+.popup input[type="password"]:hover,
+.popup input[type="search"]:hover,
+.popup textarea[name="comment"]:hover {
 	box-shadow: inset 0 0 0 1px #b2b2b2;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea[name="comment"]:focus {
+.box-subscription input[type="text"]:focus,
+.popup input[type="text"]:focus,
+.popup input[type="password"]:focus,
+.popup input[type="search"]:focus,
+.popup textarea[name="comment"]:focus {
 	color: #5b9ddf;
 	border: 1px solid #5b9ddf;
 	box-shadow: inset 0 0 0 1px #5b9ddf;
