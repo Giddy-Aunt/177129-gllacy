@@ -335,6 +335,25 @@ a {
 	font-size: 20px;
 }
 
+.user-block .full-basket-btn {
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.full-basket-btn .icon-basket:after {
+    content: "\e908";
+	
+	position: absolute;
+	top: 6px;
+	left: 18px;
+	
+	font-family: 'icomoon';
+	font-size: 13px;
+
+	color: #e84d37;
+	text-shadow: 0 -1px 0 #e84d37;
+}
+
 .search-btn:before {
     content: "\e906";
 	
@@ -358,6 +377,7 @@ a {
 }
 
 .basket-btn {
+	position: relative;
 	min-width: 90px;
 	text-align: left;
 }
@@ -634,7 +654,9 @@ body > input[type="radio"] {
 	display: inline-block;
 	vertical-align: top;
 	width: 267px;
-	padding: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin-bottom: 21px;
 	margin-right: 6px;
 	
@@ -734,11 +756,11 @@ body > input[type="radio"] {
 .quick-view {
 	display: none;
 	position: absolute;
-	left: 0;
-	bottom: -76px;
 	z-index: 10;
-	width: 287px;
-	padding: 15px 0;
+	left:0;
+	width: 267px;
+	padding: 15px 10px;
+	padding-top: 20px;
 	
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -848,7 +870,7 @@ body > input[type="radio"] {
 }
 
 .box-news h2 {
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-bottom: 5px;
 	
 	font-size: 16px;
@@ -871,31 +893,16 @@ body > input[type="radio"] {
 }
 
 .box-subscription {
-	position: relative;
 	box-sizing:border-box;
 	float: right;
-	width: 550px;
-	min-height: 210px;
-	margin-top: 5px;
+	width: 560px;
+	min-height: 220px;
 	margin-bottom: 40px;
-	padding-left: 20px;
+	padding: 10px;
 	
 	border-radius: 12px;
 	color: 5a5a5a;
-	background: #f8f7f4;
-}
 
-.box-subscription::after {
-	content: "";
-	position: absolute;
-	top: -5px;
-	left: -5px;
-
-	
-	width: 560px;
-	min-height: 220px;
-	
-	border-radius: 12px;
 	background: repeating-linear-gradient(
 		-45deg, 
 		#f8f7f4 0, 
@@ -906,8 +913,17 @@ body > input[type="radio"] {
 		#f8f7f4 30px,
 		#fe9e90 30px,
 		#fe9e90 40px);
-		
-	z-index: -10;
+}
+
+.box-subscription-inner {
+	box-sizing:border-box;
+	width: 540px;
+	min-height: 200px;
+	padding-left: 10px;
+	padding-top: 20px;
+	
+	border-radius: 12px;
+	background: #f8f7f4;
 }
 
 .box-subscription .btn {
@@ -917,7 +933,7 @@ body > input[type="radio"] {
 .box-subscription p {
 	font-size: 16px;
 	line-height: 22px;
-	margin: 30px 0;
+	margin-bottom: 30px;
 }
 
 .box-subscription input[type="text"] {
