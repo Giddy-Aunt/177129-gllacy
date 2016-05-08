@@ -46,29 +46,35 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="user-block">
-				<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
-				<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
-				<a class="user-btn basket-btn" href="#"><span class="icon-basket"></span>Пусто</a>
-			</div>
+			<ul class="user-block">
+				<li class="search">
+					<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
+					<div class="popup search-popup">
+						<form action="#" method="get">
+							<input type="search" id="search-field" name="search" placeholder="Что ищем?">
+						</form>
+					</div>
+				</li>
+				<li class="login">
+					<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
+					<div class="popup login-popup">
+						<form action="#" method="post">
+							<input type="text" id="login-field" name="login" placeholder="Электронная почта">
+							<input type="password" id="password-field" name="password" placeholder="Пароль">
+							<a class="btn" href="#">Войти</a>
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</form>
+					</div>
+				</li>
+				<li class="basket">
+					<a class="user-btn basket-btn" href="#"><span class="icon-basket"></span>Пусто</a>
+				</li>
+			</ul>
 			<p class="header-contacts">
 				С 10 до 20 ежедневно<br>
 				<span class="phone">8 812 450-25-25</span>
 			</p>
-			<div class="popup popup-search">
-				<form action="#" method="get">
-					<input type="search" id="search-field" name="search" placeholder="Что ищем?">
-				</form>
-			</div>
-			<div class="popup popup-login">
-				<form action="#" method="post">
-					<input type="text" id="login-field" name="login" placeholder="Электронная почта">
-					<input type="password" id="password-field" name="password" placeholder="Пароль">
-					<button class="btn" type="submit">Войти</button>
-					<a href="#">Забыли пароль?</a>
-					<a href="#">Новая регистрация</a>
-				</form>
-			</div>
 		</header>
 		<div class="container">
 			<div class="slider">
@@ -239,21 +245,48 @@
 				<p>Для заказов по телефону:<br>
 				<span class="bold">8 812 450-25-25</span><br>
 				(с 10 до 20 ежедневно)</p>
-				<a class="btn" href="#">Форма обратной связи</a>
+				<a class="btn feedback-btn" href="#">Форма обратной связи</a>
 			</div>
 		</footer>
-			<div class="popup popup-feedback">
+			<div class="popup feedback-popup">
 				<h2>Мы обязательно вам ответим!</h2>
 				<form action="#" method="get">
 					<input type="text" id="feedback-name-field" name="name" placeholder="Как вас зовут?">
 					<input type="text" id="feedback-email-field" name="email" placeholder="Ваша почта ответа?">
 					<textarea id="comment-field" name="comment"> Напишите что-нибудь</textarea>
 					<button class="btn" type="submit">Отправить</button>
-					<button class="close-btn" type="button" title="Закрыть">Закрыть</button>
+					<button class="feedback-close-btn" type="button" title="Закрыть">Закрыть</button>
 				</form>
 			</div>
 			<div class="overlay"></div>
 	</div>
+		<script>
+			var link = document.querySelector(".feedback-btn");
+			var popup = document.querySelector(".feedback-popup");
+			var overlay = document.querySelector(".overlay");
+			var close = popup.querySelector(".feedback-close-btn");
+			
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("popup-show");
+				overlay.classList.add("overlay-show");
+			});
+			
+			close.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.remove("popup-show");
+				overlay.classList.remove("overlay-show");
+			});
+			
+			window.addEventListener("keydown", function(event) {
+				if (event.keyCode === 27) {
+				if (popup.classList.contains("popup-show")) {
+				popup.classList.remove("popup-show");
+				overlay.classList.remove("overlay-show");
+				}
+				}
+			});
+		</script>
 	</body>
 </html>
  	

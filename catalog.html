@@ -42,30 +42,30 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="user-block">
-				<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
-				<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
+			<ul class="user-block">
+				<li class="search">
+					<a class="user-btn search-btn" href="#"><span class="icon-loupe"></span>Поиск</a>
+					<div class="popup search-popup">
+						<form action="#" method="get">
+							<input type="search" id="search-field" name="search" placeholder="Что ищем?">
+						</form>
+					</div>
+				</li>
+				<li class="login">
+					<a class="user-btn login-btn" href="#"><span class="icon-login"></span>Вход</a>
+					<div class="popup login-popup">
+						<form action="#" method="post">
+							<input type="text" id="login-field" name="login" placeholder="Электронная почта">
+							<input type="password" id="password-field" name="password" placeholder="Пароль">
+							<a class="btn" href="#">Войти</a>
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</form>
+					</div>
+				</li>
+				<li class="basket">
 				<a class="user-btn basket-btn full-basket-btn" href="#"><span class="icon-basket"></span>2 товара</a>
-			</div>
-			<p class="header-contacts">
-				С 10 до 20 ежедневно<br>
-				<span class="phone">8 812 450-25-25</span>
-			</p>
-			<div class="popup popup-search">
-				<form action="#" method="get">
-					<input type="search" id="search-field" name="search" placeholder="Что ищем?">
-				</form>
-			</div>
-			<div class="popup popup-login">
-				<form action="#" method="post">
-					<input type="text" id="login-field" name="login" placeholder="Электронная почта">
-					<input type="password" id="password-field" name="password" placeholder="Пароль">
-					<a class="btn" href="#">Войти</a>
-					<a href="#">Забыли пароль?</a>
-					<a href="#">Новая регистрация</a>
-				</form>
-			</div>
-			<div class="box popup popup-basket">
+				<div class="box popup basket-popup">
 				<table class="purchase">
 					<tr class="first-purchase">
 						<td class="remove"><button class="remove-btn" type="button" title="Удалить из корзины">Удалить из корзины</button></td>
@@ -87,6 +87,12 @@
 				</table>
 				<a class="btn" href="#">Оформить заказ</a>
 			</div>
+			</li>
+			</ul>
+			<p class="header-contacts">
+				С 10 до 20 ежедневно<br>
+				<span class="phone">8 812 450-25-25</span>
+			</p>
 		</header>
 		<div class="container clearfix">
 			<nav class="page-navigation">
@@ -366,19 +372,19 @@
 						<a>1</a>
 					</li>
 					<li class="page-number">
-						<a href="#2">2</a>
+						<a href="#">2</a>
 					</li>
 					<li class="page-number">
-						<a href="#3">3</a>
+						<a href="#">3</a>
 					</li>
 					<li  class="page-number">
-						<a href="#4">4</a>
+						<a href="#">4</a>
 					</li>
 					<li class="page-number">
-						<a href="#5">5</a>
+						<a href="#">5</a>
 					</li>
 					<li class="page-number">
-					<a href="#2"></a>
+					<a href="#"></a>
 					</li>
 				</ul>
 			</section>
@@ -415,5 +421,5 @@
 				<p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 			</div>
 		</footer>
-		</body>
+	</body>
 </html>
