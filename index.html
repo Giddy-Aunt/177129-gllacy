@@ -212,9 +212,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="map" id="yandex-map">
-			</div>
-			<footer class="main-footer container clearfix">
+			<footer class="main-footer">
+				<div class="map" id="yandex-map"></div>
+				<div class="container footer-container clearfix">
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a>
 					<a class="social-btn social-btn-inst" href="#"><span class="icon-instagram"></span>Инстаграм</a>
@@ -255,6 +255,7 @@
 					(с 10 до 20 ежедневно)</p>
 					<a class="btn feedback-btn" href="#">Форма обратной связи</a>
 				</div>
+				</div>
 			</footer>
 			<div class="popup feedback-popup">
 				<h2>Мы обязательно вам ответим!</h2>
@@ -277,62 +278,13 @@
 			</div>
 			<div class="overlay"></div>
 		</div>
-		<script>
-			var link = document.querySelector(".feedback-btn");
-			var popup = document.querySelector(".feedback-popup");
-			var overlay = document.querySelector(".overlay");
-			var close = popup.querySelector(".feedback-close-btn");
-				
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.add("popup-show");
-				overlay.classList.add("overlay-show");
-			});
-				
-			close.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.remove("popup-show");
-				overlay.classList.remove("overlay-show");
-			});
-				
-			window.addEventListener("keydown", function(event) {
-				if (event.keyCode === 27) {
-				if (popup.classList.contains("popup-show")) {
-				popup.classList.remove("popup-show");
-				overlay.classList.remove("overlay-show");
-				}
-				}
-			});
-			
-		</script>
+
+					
 		<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-		<script>
-			ymaps.ready(init);
- 
-	function init(){     
- 
-		var myMap;
- 
-		myMap = new ymaps.Map("yandex-map", {
-			center: [59.938631,30.323055],
-			zoom: 16
-		});
-	
-		var myPlacemark = new ymaps.Placemark([59.938631,30.323055] , {},
-			{ iconLayout: 'default#image',
-			iconImageHref: 'img/pin.png',
-			iconImageSize: [180, 140],
-			iconImageOffset: [-50, -140],
-		});
-			
-		var my
- 
-		myMap.geoObjects.add(myPlacemark);
- 
-	}
-		</script>
-}
-</script>
+		<script src="js/map.js"></script>
+		<script src="js/popup.js"></script>
+		
+		
 	</body>
 </html>
 	 	
