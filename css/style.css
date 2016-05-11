@@ -390,7 +390,7 @@ a {
 
 .page-title {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	
 	color: #ffffff;
 	font-size: 35px;
@@ -640,7 +640,7 @@ body > input[type="radio"] {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-bottom: 21px;
+	margin-bottom: 31px;
 	margin-right: 6px;
 	
 	text-align: center;
@@ -649,7 +649,7 @@ body > input[type="radio"] {
 }
 
 .inner-page .product-card {
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 .product-card:nth-child(4n) {
@@ -707,7 +707,7 @@ body > input[type="radio"] {
 .price .icon-ruble::before {
 	content: "\e907";
 	
-	padding-bottom: 4px;
+	padding-bottom: 3px;
 	font-family: 'icomoon';
 	font-size: 38px;
 }
@@ -717,7 +717,7 @@ body > input[type="radio"] {
 	
 	position: absolute;
 	left: 10px;
-	top: 10px;
+	top: 8px;
 	width: 62px;
 	height: 62px;
 	
@@ -824,7 +824,7 @@ body > input[type="radio"] {
 	width: 560px;
 	min-height: 220px;
 	margin-bottom: 40px;
-	padding-left: 20px;
+	padding: 20px;
 	padding-right: 230px;
 	
 	border-radius: 12px;
@@ -833,8 +833,7 @@ body > input[type="radio"] {
 }
 
 .box-news h2 {
-	margin-top: 15px;
-	margin-bottom: 5px;
+	margin: 4px 0;
 	
 	font-size: 16px;
 	font-weight: 500;
@@ -881,7 +880,8 @@ body > input[type="radio"] {
 .box-subscription-inner {
 	box-sizing:border-box;
 	min-height: 210px;
-	padding: 20px 10px;
+	padding-top: 15px;
+	padding-left: 20px;
 		
 	border-radius: 12px;
 	background: #f8f7f4;
@@ -895,11 +895,11 @@ body > input[type="radio"] {
 .box-subscription p {
 	font-size: 16px;
 	line-height: 22px;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 
 .box-subscription input[type="text"] {
-	width: 346px;
+	width: 340px;
 }
 
 
@@ -911,9 +911,8 @@ body > input[type="radio"] {
 
 .filters {
 	box-sizing: border-box;
-	height: 135px;
 	padding: 0 27px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	
 	font-size: 16px;
 	font-weight: 500;
@@ -931,8 +930,14 @@ body > input[type="radio"] {
 .filters li {
 	display: inline-block;
 	vertical-align: middle;
-	
+}
+
+.topping li {
 	margin-right: 20px;
+}
+
+.fat li {
+	margin-right: 15px;
 }
 
 .filters fieldset {
@@ -940,26 +945,36 @@ body > input[type="radio"] {
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 38px;
-	margin-right: 15px;
-	padding: 9px 10px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 17px;
 	
 	border: none;
 	background-color: rgba(248, 247, 244, 0.2);
 	border-radius: 20px;
 }
 
-.filters fieldset:first-child:hover {
+.filters .sorting {
+	padding: 7px 10px;
+	margin-right: 15px;
+}
+
+.filters .sorting:hover {
 	background-color: #ffffff;
 }
 
 .filters legend {
 	position: absolute;
-	left: 20px;
-	bottom: 45px;
+	left: 17px;
+	bottom: 42px;
+	
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
 }
 
 .filters-btn {
-	padding: 8px 24px;
+	padding: 7px 24px;
 	margin-top: 38px;
 	
 	border: 2px solid #ffffff;
@@ -988,6 +1003,11 @@ body > input[type="radio"] {
 	padding-left: 30px;
 	cursor: pointer;
 }
+
+.filters label {
+	padding-left: 27px;
+}
+	
 
 .fat label::before,
 .topping label::before {
@@ -1047,8 +1067,12 @@ input[type="checkbox"]:disabled + label::before {
 .price-range {
 	display: inline-block;
 	margin-top: 12px;
-	margin-right: 15px;
+	margin-right: 13px;
+	
 	vertical-align: top;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 16px;
 }
 
 .price-controls {
@@ -1109,11 +1133,11 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .range-toggle-min {
-	left: 40px;
+	left: 38px;
 }
 
 .range-toggle-max {
-	right: 70px;
+	right: 66px;
 }
 
 .paginator {
@@ -1239,6 +1263,21 @@ input[type="checkbox"]:disabled + label::before {
 	font-size: 30px;
 }
 
+.social-btn:active span::after {
+	content: "";
+	
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	
+	width: 30px;
+	height: 30px;
+	
+	border-radius: 50%;
+	background-color: transparent;
+	box-shadow: inset 0 2px 1px 0 #888888;
+} 
+
 .icon-vkontakte::before {
 	content: "\e90d";
 }
@@ -1331,16 +1370,16 @@ input[type="checkbox"]:disabled + label::before {
 
 .copyright-logo {
 	position: absolute;
-	top: -15px;
-	left: 15px;
+	top: -17px;
+	left: 13px;
 }
 
 .footer-contacts {
 	position: absolute;
-	bottom: 165px;
+	bottom: 145px;
 	right: 27px;
 	width: 250px;
-	padding: 25px;
+	padding: 30px 25px;
 	
 	font-size: 14px;
 	line-height: 20px;
@@ -1348,6 +1387,11 @@ input[type="checkbox"]:disabled + label::before {
 	color: #323232;
 	background-color: #fefefd;
 	border-radius: 12px;
+}
+
+.footer-contacts  p {
+	margin: 0;
+	margin-bottom: 25px;
 }
 
 .footer-contacts .btn {
