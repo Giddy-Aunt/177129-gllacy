@@ -1115,7 +1115,7 @@ body > input[type='radio'] {
 	border-radius: 4px;
 }
 
-input[type='radio']:checked + label::after {
+input[type='radio']:checked  label::after {
 	position: absolute;
 	top: 4px;
 	left: 4px;
@@ -1129,7 +1129,7 @@ input[type='radio']:checked + label::after {
 	background-color: #fff;
 }
 
-input[type='checkbox']:checked + label::before {
+input[type='checkbox']:checked  label::before {
 	font-family: 'icomoon';
 	font-size: 12px;
 	line-height: 18px;
@@ -1138,8 +1138,8 @@ input[type='checkbox']:checked + label::before {
 	text-align: center;
 }
 
-input[type='radio']:disabled + label::before,
-input[type='checkbox']:disabled + label::before {
+input[type='radio']:disabled  label::before,
+input[type='checkbox']:disabled  label::before {
 	color: rgba(255, 255, 255, .4);
 	border: 1px solid rgba(255, 255, 255, .4);
 	box-shadow: none;
@@ -1338,63 +1338,74 @@ input[type='checkbox']:disabled + label::before {
 	width: 30px;
 	height: 30px;
 	margin-right: 15px;
+	padding: 3px;
 
 	text-align: center;
 	vertical-align: top;
 
-	color: rgba(255, 255, 255, .8);
-	border: 3px solid rgba(255, 255, 255, .5);
 	border-radius: 50%;
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
+.social-btn:hover,
 .social-btn:hover {
-	color: #fff;
-	border: 3px solid rgba(255, 255, 255, .7);
-}
-
-.social-btn:active {
-	color: #fff;
-	border: 3px solid rgba(255, 255, 255, .7);
-	box-shadow: inset 0 2px 1px 0 #888;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .social-btn span {
-	font-size: 30px;
-
-	position: relative;
-}
-
-.social-btn:active span::after {
-	position: absolute;
-	z-index: 10;
-	left: 0;
+	display: inline-block;
 
 	width: 30px;
 	height: 30px;
-
-	content: '';
-
+	vertical-align: middle;
+	line-height: 30px;
 	border-radius: 50%;
-	background-color: transparent;
+	
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.social-btn:hover span{
+	background-color: #ffffff;
+}
+
+.social-btn:active span{
 	box-shadow: inset 0 2px 1px 0 #888;
 }
 
-.icon-vkontakte::before {
-	content: '\e90d';
+#btn-1:checked ~ .site-wrapper .social-btn {
+	color: #849d8f;
 }
 
-.icon-facebook::before {
-	content: '\e90a';
+#btn-2:checked ~ .site-wrapper .social-btn {
+	color: #8996a6;
 }
 
-.icon-instagram::before {
-	content: '\e90b';
+#btn-3:checked ~ .site-wrapper .social-btn {
+	color: #9d8b84;
 }
 
-.icon-twitter::before {
-	content: '\e90c';
+.icon-vkontakte:before {
+	content: "\e901";
+		
+	font-size: 28px;
 }
+ 
+ .icon-facebook:before {
+	content: "\f09a";
+ 	
+	font-size: 20px;
+ }
+ .icon-instagram:before {
+	content: "\f16d";
+ 		
+	font-size: 17px;
+ }
+ .icon-twitter:before {
+	content: "\f099";
+ 	 	
+ 	font-size: 20px;
+ }
+ 
 
 .footer-navigation {
 	float: left;
@@ -1435,17 +1446,18 @@ input[type='checkbox']:disabled + label::before {
 	font-family: 'icomoon';
 	font-weight: normal;
 	font-size: 13px;
+	line-height: 13px;
 
 	display: inline-block;
 	
 	text-align: center;
 	
 	width: 20px;
-
+	
 	content: '\e902';
 }
 
-.footer-navigation .important:hover::before {
+.footer-navigation li:hover {
 	color: #ffbc9e;
 }
 
@@ -1863,9 +1875,9 @@ input[type='checkbox']:disabled + label::before {
 	color: #999;
 }
 
-.box-subscription input:focus + label,
-.popup input:focus + label,
-.popup textarea:focus + label {
+.box-subscription input:focus  label,
+.popup input:focus  label,
+.popup textarea:focus  label {
 	font-size: 11px;
 	line-height: 13px;
 
@@ -1874,9 +1886,9 @@ input[type='checkbox']:disabled + label::before {
 	color: #5b9ddf;
 }
 
-.box-subscription input:valid + label,
-.popup input:valid + label,
-.popup textarea:valid + label {
+.box-subscription input:valid  label,
+.popup input:valid  label,
+.popup textarea:valid  label {
 	font-size: 11px;
 	line-height: 13px;
 
