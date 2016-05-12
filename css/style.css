@@ -1426,16 +1426,21 @@ input[type='checkbox']:disabled + label::before {
 
 .footer-navigation .important {
 	font-weight: 700;
-
-	position: relative;
+	
+	padding: 0;
+	margin-left: -3px;
 }
 
 .footer-navigation .important::before {
 	font-family: 'icomoon';
 	font-weight: normal;
+	font-size: 13px;
 
-	position: absolute;
-	left: 0;
+	display: inline-block;
+	
+	text-align: center;
+	
+	width: 20px;
 
 	content: '\e902';
 }
