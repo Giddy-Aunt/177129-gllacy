@@ -1,0 +1,1 @@
+function init(){var a;a=new ymaps.Map("yandex-map",{center:[59.939494,30.329428],zoom:16});var b=new ymaps.Placemark([59.938631,30.323055],{},{iconLayout:"default#image",iconImageHref:"img/pin.png",iconImageSize:[180,140],iconImageOffset:[-50,-140]});a.geoObjects.add(b)}ymaps.ready(init);

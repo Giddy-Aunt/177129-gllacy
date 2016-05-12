@@ -13,7 +13,7 @@
 			{ iconLayout: 'default#image',
 			iconImageHref: 'img/pin.png',
 			iconImageSize: [180, 140],
-			iconImageOffset: [-50, -140],
+			iconImageOffset: [-50, -140]
 		});
 			
 		myMap.geoObjects.add(myPlacemark);

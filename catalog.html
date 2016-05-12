@@ -5,7 +5,7 @@
 			<title>Сливочное мороженое</title>
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style-min.css">
 	</head>
 	<body class="inner-page">
 		<header class="main-header container clearfix">
@@ -189,7 +189,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="user-btn filters-btn" type="submit">Применить</button>
+					<a class="user-btn filters-btn">Применить</a>
 				</form>
 			</section>
 			<section class="catalog">
@@ -386,9 +386,7 @@
 				</ul>
 			</section>
 		</div>
-		<footer class="main-footer">
-				<div class="map" id="yandex-map"></div>
-				<div class="container footer-container clearfix">
+		<footer class="main-footer container clearfix">
 			<div class="footer-social">
 				<a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a>
 				<a class="social-btn social-btn-inst" href="#"><span class="icon-instagram"></span>Инстаграм</a>
@@ -419,42 +417,6 @@
 				</a>
 				<p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 			</div>
-			<div class="footer-contacts">
-				<p>Адрес главного офиса и<br>
-				офлайн-магазина:<br>
-				<span class="bold">ул. Большая Конюшенная<br>
-				19/8, Санкт-Петербург</span></p>
-				<p>Для заказов по телефону:<br>
-				<span class="bold">8 812 450-25-25</span><br>
-				(с 10 до 20 ежедневно)</p>
-				<a class="btn feedback-btn" href="#">Форма обратной связи</a>
-			</div>
-			</div>
 		</footer>
-			<div class="popup feedback-popup">
-				<h2>Мы обязательно вам ответим!</h2>
-				<form action="#" method="get">
-					<fieldset>
-						<input type="text" id="feedback-name-field" name="name" required>
-						<label for="feedback-name-field">Как вас зовут?</label>
-					</fieldset>
-					<fieldset>
-						<input type="text" id="feedback-email-field" name="email" required>
-						<label for="feedback-email-field">Ваша почта ответа?</label>
-					</fieldset>
-					<fieldset>
-						<textarea id="comment-field" name="comment" required></textarea>
-						<label for="comment-field">Напишите что-нибудь</label>
-					</fieldset>
-						<button class="btn" type="submit">Отправить</button>
-						<button class="feedback-close-btn" type="button" title="Закрыть">Закрыть</button>
-				</form>
-			</div>
-			<div class="overlay"></div>
-			
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-		<script src="js/map.js"></script>
-		<script src="js/popup.js"></script>
-		
 	</body>
 </html>
