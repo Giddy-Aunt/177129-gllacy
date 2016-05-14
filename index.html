@@ -52,8 +52,8 @@
 						<div class="popup search-popup">
 							<form action="#" method="get">
 								<fieldset>
-								<input type="search" id="search-field" name="search" required>
-								<label for="search-field">Что ищем?</label>
+									<input type="search" id="search-field" name="search" required>
+									<label for="search-field">Что ищем?</label>
 								</fieldset>
 							</form>
 						</div>
@@ -63,12 +63,12 @@
 						<div class="popup login-popup">
 							<form action="#" method="post">
 								<fieldset>
-								<input type="text" id="login-field" name="login" required>
-								<label for="login-field">Электронная почта</label>
+									<input type="text" id="login-field" name="login" required>
+									<label for="login-field">Электронная почта</label>
 								</fieldset>
 								<fieldset>
-								<input type="password" id="password-field" name="password" required>
-								<label for="password-field">Пароль</label>
+									<input type="password" id="password-field" name="password" required>
+									<label for="password-field">Пароль</label>
 								</fieldset>
 								<a class="btn" href="#">Войти</a>
 								<a href="#">Забыли пароль?</a>
@@ -212,7 +212,20 @@
 					</div>
 				</div>
 			</div>
-			<div class="map" id="yandex-map"></div>
+			<div class="map" id="yandex-map">
+				<div class="container">
+					<div class="footer-contacts">
+						<p>Адрес главного офиса и<br>
+						офлайн-магазина:<br>
+						<span class="bold">ул. Большая Конюшенная<br>
+						19/8, Санкт-Петербург</span></p>
+						<p>Для заказов по телефону:<br>
+						<span class="bold">8 812 450-25-25</span><br>
+						(с 10 до 20 ежедневно)</p>
+						<a class="btn feedback-btn" href="#">Форма обратной связи</a>
+					</div>
+				</div>
+			</div>
 			<footer class="main-footer container clearfix">
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#"><span class="icon-twitter"></span>Твиттер</a>
@@ -244,16 +257,6 @@
 					</a>
 					<p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">HTML Academy</a> © 2016</p>
 				</div>
-				<div class="footer-contacts">
-					<p>Адрес главного офиса и<br>
-					офлайн-магазина:<br>
-					<span class="bold">ул. Большая Конюшенная<br>
-					19/8, Санкт-Петербург</span></p>
-					<p>Для заказов по телефону:<br>
-					<span class="bold">8 812 450-25-25</span><br>
-					(с 10 до 20 ежедневно)</p>
-					<a class="btn feedback-btn" href="#">Форма обратной связи</a>
-				</div>
 			</footer>
 			<div class="popup feedback-popup">
 				<h2>Мы обязательно вам ответим!</h2>
@@ -270,7 +273,7 @@
 						<textarea id="comment-field" name="comment" required></textarea>
 						<label for="comment-field">Напишите что-нибудь</label>
 					</fieldset>
-						<button class="btn" type="submit">Отправить</button>
+						<a class="btn">Отправить</a>
 						<button class="feedback-close-btn" type="button" title="Закрыть">Закрыть</button>
 				</form>
 			</div>

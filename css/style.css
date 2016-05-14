@@ -138,6 +138,7 @@ a {
 }
 
 .main-menu > li > a {
+	  margin: 0 12px;
   color: inherit;
   text-decoration: none;
 
@@ -152,9 +153,9 @@ a {
 
 .main-menu > li {
   position: relative;
-	  margin: 0 13px;
+
   display: inline-block;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 
   vertical-align: top;
 }
@@ -680,7 +681,7 @@ margin-top: 35px;
   margin-right: 0;
 }
 
-.product-card a {
+.product-card > a {
   color: inherit;
   text-decoration: none;
   display: block;
@@ -1041,16 +1042,18 @@ margin-top: 35px;
   box-shadow: inset 0 0 0 2px #ffffff;
 }
 
-.filters-btn:active {
-	background-color: #eaeaea;
-	color: #323232;
-	box-shadow: inset 0 2px 1px 0 #888888;
-}
-
 .filters-btn:hover {
 	color: #323232;
 	background-color: #ffffff;
 }
+
+.filters-btn:active {
+	color: #323232;
+	background-color: #eaeaea;
+	box-shadow: inset 0 2px 1px 0 #888888;
+}
+
+
 
 .filters select {
   color: #ffffff;
@@ -1253,11 +1256,18 @@ input[type="checkbox"]:disabled +label::before {
   text-decoration: none;
 }
 
-.page-number:not(.disabled):not(.current):hover,
-.page-number:not(.disabled):not(.current):active {
+.page-number:not(.disabled):not(.current):hover{
   background: #9db1a5;
   border-radius: 50%;
 }
+
+.page-number:not(.disabled):not(.current):active {
+	background: #ffffff;
+	color: #323232;
+	border-radius: 50%;
+}
+
+
 
 .previous-page::before,
 .next-page::before {
@@ -1284,6 +1294,11 @@ input[type="checkbox"]:disabled +label::before {
 
   border-bottom: 1px solid white;
   border-left: 1px solid white;
+}
+
+.previous-page:active::before,
+.next-page:active::before {
+	border-color: #323232;
 }
 
 .paginator .current {
@@ -1468,10 +1483,15 @@ input[type="checkbox"]:disabled +label::before {
 
 }
 
+.map .container {
+	position: relative;
+}
+
 .footer-contacts {
   position: absolute;
   right: 27px;
-  bottom: 162px;
+  top: 60;
+  z-index: 10;
 
   width: 250px;
   padding: 30px 25px;
