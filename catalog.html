@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-			<meta charset="utf-8">
-			<title>Сливочное мороженое</title>
+		<meta charset="utf-8">
+		<title>Сливочное мороженое</title>
 		<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="inner-page">
 		<header class="main-header container clearfix">
@@ -59,12 +59,12 @@
 					<div class="popup login-popup">
 						<form action="#" method="post">
 							<fieldset>
-							<input type="text" id="login-field" name="login" required>
-							<label for="login-field">Электронная почта</label>
+								<input type="text" id="login-field" name="login" required>
+								<label for="login-field">Электронная почта</label>
 							</fieldset>
 							<fieldset>
-							<input type="password" id="password-field" name="password" required>
-							<label for="password-field">Пароль</label>
+								<input type="password" id="password-field" name="password" required>
+								<label for="password-field">Пароль</label>
 							</fieldset>
 							<a class="btn" href="#">Войти</a>
 							<a href="#">Забыли пароль?</a>
@@ -104,7 +104,7 @@
 			</p>
 		</header>
 		<div class="container clearfix">
-			<nav class="page-navigation">
+			<div class="page-navigation">
 				<ul class="breadcrumbs">
 					<li>
 						<a href="index.html">Главная</a>
@@ -117,7 +117,7 @@
 					</li>
 				</ul>
 				<h1 class="page-title">Сливочное мороженое</h1>
-			</nav>
+			</div>
 			<section class="filters">
 				<form action="#" method="get">
 					<fieldset class="sorting">
@@ -137,7 +137,7 @@
 						</div>
 						<div class="range-controls">
 							<div class="scale">
-							<div class="bar"></div>
+								<div class="bar"></div>
 							</div>
 							<div class="range-toggle range-toggle-min"></div>
 							<div class="range-toggle range-toggle-max"></div>
@@ -189,7 +189,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<button class="user-btn filters-btn" type="submit">Применить</button>
+					<button class="filters-btn" type="submit">Применить</button>
 				</form>
 			</section>
 			<section class="catalog">
@@ -361,30 +361,30 @@
 						<a class="btn" href="#">Быстрый просмотр</a>
 					</div>				
 				</article>
-				<ul class="paginator">
-					<li class="page-number previous-page disabled">
-						<a href="#"></a>
-					</li>
-					<li class="page-number current">
-						<a>1</a>
-					</li>
-					<li class="page-number">
-						<a href="#">2</a>
-					</li>
-					<li class="page-number">
-						<a href="#">3</a>
-					</li>
-					<li  class="page-number">
-						<a href="#">4</a>
-					</li>
-					<li class="page-number">
-						<a href="#">5</a>
-					</li>
-					<li class="page-number next-page">
-					<a href="#"></a>
-					</li>
-				</ul>
 			</section>
+			<ul class="paginator">
+				<li class="page-number previous-page disabled">
+					<a href="#"></a>
+				</li>
+				<li class="page-number current">
+					<a>1</a>
+				</li>
+				<li class="page-number">
+					<a href="#">2</a>
+				</li>
+				<li class="page-number">
+					<a href="#">3</a>
+				</li>
+				<li  class="page-number">
+					<a href="#">4</a>
+				</li>
+				<li class="page-number">
+					<a href="#">5</a>
+				</li>
+				<li class="page-number next-page">
+				<a href="#"></a>
+				</li>
+			</ul>
 		</div>
 		<footer class="main-footer container clearfix">
 			<div class="footer-social">
@@ -393,7 +393,7 @@
 				<a class="social-btn social-btn-fb" href="#"><span class="icon-facebook"></span>Фейсбук</a>
 				<a class="social-btn social-btn-vk" href="#"><span class="icon-vkontakte"></span>Вконтакте</a>
 			</div>
-			<nav class="footer-navigation">
+			<div class="footer-navigation">
 				<ul>
 					<li class="important">
 						<a href="#">Для поставщиков</a>
@@ -410,7 +410,7 @@
 						<a href="#">Экологические стандарты</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
 			<div class="footer-copyright">
 				<a href="https://htmlacademy.ru">
 					<img class="copyright-logo" width="108" height="38" src="img/htmlacademylogo.svg" alt="HTML Academy">
