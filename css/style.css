@@ -55,7 +55,6 @@ a {
 }
 
 .container {
-	
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
@@ -118,24 +117,26 @@ a {
 }
 
 .main-menu {
-	display: inline-block;
-	vertical-align: top;
-	margin: 0;
-	padding-left: 12px;
-	margin-top: 5px;
+  display: inline-block;
+  margin: 0;
+  margin-top: 5px;
+  padding-left: 12px;
 
-	list-style: none;
+  list-style: none;
+  vertical-align: top;
 }
 
 .header-logo {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: -10px;
-	margin-left: -3px;
+  display: inline-block;
+  margin-top: -10px;
+  margin-left: -3px;
+
+  vertical-align: top;
 }
 
 .main-menu-item > a {
-	  margin: 0 12px;
+  margin: 0 12px;
+
   color: inherit;
   text-decoration: none;
 
@@ -180,7 +181,7 @@ a {
   box-shadow: inset 0 2px 1px 0 #696969;
 }
 
-.main-menu-item  > .current {
+.main-menu-item > .current {
   margin: 0;
   padding: 6px 12px;
 
@@ -376,13 +377,11 @@ a {
 
 
 .header-contacts {
-	
-	float: right;
-	width: 300px;
-	margin: 0;
-	margin-top: 5px;
+  float: right;
+  width: 300px;
+  margin: 0;
+  margin-top: 5px;
 
-  
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -595,15 +594,16 @@ body > input[type="radio"] {
 
 .banner {
   position: relative;
-	box-sizing: border-box;
- 
+
+  box-sizing: border-box;
   width: 560px;
   min-height: 230px;
   margin-bottom: 38px;
-    padding: 0 20px;
+  padding: 0 20px;
+
+  text-align: right;
 
   border-radius: 12px;
-  text-align: right;
 }
 
 .banner h2 {
@@ -612,7 +612,7 @@ body > input[type="radio"] {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-text-align: left;
+  text-align: left;
 }
 
 .banner p {
@@ -626,8 +626,9 @@ text-align: left;
 
 
 .banner .btn {
-vertical-align: bottom;
-margin-top: 30px;
+  margin-top: 30px;
+
+  vertical-align: bottom;
 }
 
 
@@ -658,7 +659,7 @@ margin-top: 30px;
   width: 267px;
   margin-right: 26px;
   margin-bottom: 36px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 
   vertical-align: top;
   text-align: center;
@@ -674,9 +675,10 @@ margin-top: 30px;
 }
 
 .product-card > a {
+  display: block;
+
   color: inherit;
   text-decoration: none;
-  display: block;
 }
 
 .product-card h2 {
@@ -701,14 +703,14 @@ margin-top: 30px;
   margin-bottom: 13px;
   overflow: hidden;
 
-  border-radius: 50%;
   border: 2px solid transparent;
+  border-radius: 50%;
 }
 
 .price {
   position: absolute;
   top: 210px;
-  left: 0;
+  left: 5px;
   z-index: 20;
 
   font-weight: 700;
@@ -749,24 +751,24 @@ margin-top: 30px;
 
 .quick-view {
   position: absolute;
-  left: -5px;
   top: -5px;
+  left: -5px;
   z-index: 10;
 
   display: none;
   width: 267px;
-  padding: 15px 5px;
+  padding: 15px 6px;
   padding-top: 335px;
 
   text-align: center;
 
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
   border-radius: 6px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .quick-view .btn {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 .product-card:hover .quick-view {
@@ -810,9 +812,8 @@ margin-top: 30px;
 }
 
 .about-us-box > h2 {
-	margin: 0;
+  margin: 0;
   margin-top: 6px;
-
 
   font-weight: 500;
   font-size: 24px;
@@ -1013,8 +1014,10 @@ margin-top: 30px;
 }
 
 .filters-btn {
-	  display: inline-block;
-  margin-left: 10px;
+  display: inline-block;
+  margin-top: 38px;
+  margin-left: 20px;
+  padding: 9px 24px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1024,26 +1027,26 @@ margin-top: 30px;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
+
   background-color: rgba(248, 247, 244, 0.2);
-  cursor: pointer;
-  outline: none;
   border: none;
-	
-  margin-top: 38px;
-  padding: 9px 24px;
   border-radius: 20px;
+  outline: none;
   box-shadow: inset 0 0 0 2px #ffffff;
+  cursor: pointer;
 }
 
 .filters-btn:hover {
-	color: #323232;
-	background-color: #ffffff;
+  color: #323232;
+
+  background-color: #ffffff;
 }
 
 .filters-btn:active {
-	color: #323232;
-	background-color: #eaeaea;
-	box-shadow: inset 0 2px 1px 0 #888888;
+  color: #323232;
+
+  background-color: #eaeaea;
+  box-shadow: inset 0 2px 1px 0 #888888;
 }
 
 
@@ -1127,7 +1130,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 input[type="radio"]:disabled + label::before,
-input[type="checkbox"]:disabled +label::before {
+input[type="checkbox"]:disabled + label::before {
   color: rgba(255, 255, 255, 0.4);
 
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -1215,14 +1218,14 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .paginator {
-	width:300px;
-  margin-left: auto;
+  width: 300px;
   margin-top: 40px;
+  margin-left: auto;
   padding: 0;
 
   list-style: none;
-  text-align: right;
   font-size: 0;
+  text-align: right;
 }
 
 .page-number {
@@ -1233,30 +1236,30 @@ input[type="checkbox"]:disabled +label::before {
   height: 26px;
   margin-left: 3px;
 
+  font-size: 16px;
+  line-height: 26px;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
-  line-height: 26px;
 
   border-radius: 50%;
 }
 
 .paginator a {
-
   text-decoration: none;
 }
 
-.page-number:not(.disabled):not(.current):hover{
+.page-number:not(.disabled):not(.current):hover {
   background: #9db1a5;
   border-radius: 50%;
 }
 
 .page-number:not(.disabled):not(.current):active {
-	background: #ffffff;
-	color: #323232;
-	border-radius: 50%;
+  color: #323232;
+
+  background: #ffffff;
+  border-radius: 50%;
 }
 
 
@@ -1290,7 +1293,7 @@ input[type="checkbox"]:disabled +label::before {
 
 .previous-page:active::before,
 .next-page:active::before {
-	border-color: #323232;
+  border-color: #323232;
 }
 
 .paginator .current {
@@ -1378,7 +1381,7 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .inner-page .social-btn {
-	color: #849d8f;
+  color: #849d8f;
 }
 
 .icon-vkontakte:before {
@@ -1461,26 +1464,25 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .copyright-logo {
-	padding-left: 10px;
+  padding-left: 10px;
 }
 
 .footer-copyright p {
   margin: 0;
+
   text-align: right;
 }
 
-.copyright-logo {
 
-}
 
 .map .container {
-	position: relative;
+  position: relative;
 }
 
 .footer-contacts {
   position: absolute;
-  right: 27px;
   top: 60px;
+  right: 27px;
   z-index: 10;
 
   width: 250px;
@@ -1616,7 +1618,7 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .search-popup input[type="search"] {
-	min-width: 310px;
+  min-width: 310px;
 }
 
 .login-popup {
@@ -1680,17 +1682,16 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .purchase {
-	border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .purchase td {
-
   padding-top: 8px;
   padding-bottom: 25px;
 }
 
 .remove {
- padding-right: 15px;
+  padding-right: 15px;
 }
 
 .purchase-product {
@@ -1746,7 +1747,8 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .purchase .full-purchase-cost {
-	padding-bottom: 13px;
+  padding-bottom: 13px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -1796,9 +1798,8 @@ input[type="checkbox"]:disabled +label::before {
 }
 
 .basket-popup .btn {
- margin-left: auto;
- padding: 11px 15px;
-
+  margin-left: auto;
+  padding: 11px 15px;
 }
 
 .basket:hover .basket-popup,
@@ -1807,92 +1808,82 @@ input[type="checkbox"]:disabled +label::before {
   display: block;
 }
 
-.box-subscription input[type='text'],
-.popup input[type='text'],
-.popup input[type='password'],
-.popup input[type='search'],
-.popup textarea[name='comment']
-{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
+.box-subscription input[type="text"],
+.popup input[type="text"],
+.popup input[type="password"],
+.popup input[type="search"],
+.popup textarea[name="comment"] {
+  padding: 9px 15px;
 
-    padding: 9px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #323232;
 
-    color: #323232;
-    border: 1px solid #b2b2b2;
-    border-radius: 5px;
-    outline: none;
-    background: transparent;
+  background: transparent;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  outline: none;
 }
 
-.box-subscription input[type='text']:hover,
-.popup input[type='text']:hover,
-.popup input[type='password']:hover,
-.popup input[type='search']:hover,
-.popup textarea[name='comment']:hover
-{
-    box-shadow: inset 0 0 0 1px #b2b2b2;
+.box-subscription input[type="text"]:hover,
+.popup input[type="text"]:hover,
+.popup input[type="password"]:hover,
+.popup input[type="search"]:hover,
+.popup textarea[name="comment"]:hover {
+  box-shadow: inset 0 0 0 1px #b2b2b2;
 }
 
-.box-subscription input[type='text']:focus,
-.popup input[type='text']:focus,
-.popup input[type='password']:focus,
-.popup input[type='search']:focus,
-.popup textarea[name='comment']:focus
-{
-    border: 1px solid #5b9ddf;
-    box-shadow: inset 0 0 0 1px #5b9ddf;
+.box-subscription input[type="text"]:focus,
+.popup input[type="text"]:focus,
+.popup input[type="password"]:focus,
+.popup input[type="search"]:focus,
+.popup textarea[name="comment"]:focus {
+  border: 1px solid #5b9ddf;
+  box-shadow: inset 0 0 0 1px #5b9ddf;
 }
 
 .box-subscription fieldset,
-.popup fieldset
-{
-    position: relative;
+.popup fieldset {
+  position: relative;
 
-    display: inline-block;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 
-    margin: 0;
-    padding: 0;
-
-    border: none;
+  border: none;
 }
 
 .box-subscription label,
-.popup label
-{
-    font-size: 16px;
-    line-height: 24px;
+.popup label {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    position: absolute;
-    top: 0;
-    left: 0;
+  padding: 9px 15px;
 
-    padding: 9px 15px;
-
-    color: #999;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
 }
 
 .box-subscription input:focus + label,
 .popup input:focus + label,
-.popup textarea:focus + label
-{
-    font-size: 11px;
-    line-height: 13px;
+.popup textarea:focus + label {
+  top: -23px;
 
-    top: -23px;
-
-    color: #5b9ddf;
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
 }
 
 .box-subscription input:valid + label,
 .popup input:valid + label,
-.popup textarea:valid + label
-{
-    font-size: 11px;
-    line-height: 13px;
+.popup textarea:valid + label {
+  top: -23px;
 
-    top: -23px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 @-webkit-keyframes bounce {
