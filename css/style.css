@@ -55,12 +55,10 @@ a {
 }
 
 .container {
+	
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
-}
-
-.column-container {
   padding: 0 27px;
 }
 
@@ -103,7 +101,6 @@ a {
   position: relative;
 
   margin-bottom: 25px;
-  padding: 0 27px;
   padding-top: 23px;
 
   color: #ffffff;
@@ -399,7 +396,6 @@ a {
 }
 
 .page-navigation {
-  padding: 0 27px;
   margin-top: -45px;
 
   color: #ffffff;
@@ -407,7 +403,7 @@ a {
 
 .page-title {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 35px;
@@ -523,7 +519,6 @@ body > input[type="radio"] {
 .slider-controls {
   position: absolute;
   bottom: 25px;
-  left: 27px;
   z-index: 10;
 
   font-size: 0;
@@ -632,7 +627,7 @@ text-align: left;
 
 .banner .btn {
 vertical-align: bottom;
-margin-top: 35px;
+margin-top: 30px;
 }
 
 
@@ -653,8 +648,6 @@ margin-top: 35px;
 }
 
 .catalog {
-  padding: 0 22px;
-
   font-size: 0;
 }
 
@@ -663,9 +656,8 @@ margin-top: 35px;
 
   display: inline-block;
   width: 267px;
-  margin-right: 16px;
+  margin-right: 26px;
   margin-bottom: 36px;
-  padding: 5px;
   padding-bottom: 0px;
 
   vertical-align: top;
@@ -674,7 +666,7 @@ margin-top: 35px;
 }
 
 .inner-page .product-card {
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 .product-card:nth-child(4n) {
@@ -715,8 +707,9 @@ margin-top: 35px;
 
 .price {
   position: absolute;
-  top: 213px;
-  left: 10px;
+  top: 210px;
+  left: 0;
+  z-index: 20;
 
   font-weight: 700;
   font-size: 45px;
@@ -745,7 +738,7 @@ margin-top: 35px;
   content: "";
   position: absolute;
   top: 3px;
-  left: 5px;
+  left: 0;
 
   width: 62px;
   height: 62px;
@@ -754,25 +747,31 @@ margin-top: 35px;
   border-radius: 50%;
 }
 
-.product-card:hover {
+/*.product-card:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 6px 6px 0 0;
-}
+}*/
 
 .quick-view {
   position: absolute;
-  left: 0;
+  left: -5px;
+  top: -5px;
   z-index: 10;
 
   display: none;
   width: 267px;
   padding: 15px 5px;
-  padding-top: 5px;
+  padding-top: 335px;
 
   text-align: center;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 0 0 6px 6px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
+.quick-view .btn {
+	vertical-align: bottom;
 }
 
 .product-card:hover .quick-view {
@@ -780,7 +779,6 @@ margin-top: 35px;
 }
 
 .about-us-box {
-  margin: 0 27px;
   margin-bottom: 40px;
   padding: 20px;
 
@@ -817,8 +815,9 @@ margin-top: 35px;
 }
 
 .about-us-box > h2 {
+	margin: 0;
   margin-top: 6px;
-  margin-bottom: 4px;
+
 
   font-weight: 500;
   font-size: 24px;
@@ -954,8 +953,7 @@ margin-top: 35px;
 
 .filters {
   box-sizing: border-box;
-  margin-bottom: 33px;
-  padding: 0 27px;
+  margin-bottom: 42px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1002,7 +1000,7 @@ margin-top: 35px;
 
 .filters .sorting {
   margin-right: 15px;
-  padding: 7px 10px;
+  padding: 8px 10px;
 }
 
 .filters .sorting:hover {
@@ -1224,8 +1222,7 @@ input[type="checkbox"]:disabled +label::before {
 .paginator {
 	width:300px;
   margin-left: auto;
-  margin-right: 17px;
-  margin-top: 45px;
+  margin-top: 40px;
   padding: 0;
 
   list-style: none;
@@ -1316,9 +1313,7 @@ input[type="checkbox"]:disabled +label::before {
   position: relative;
 
   padding-top: 35px;
-  padding-right: 27px;
   padding-bottom: 20px;
-  padding-left: 27px;
 
   color: #ffffff;
 }
@@ -1340,7 +1335,7 @@ input[type="checkbox"]:disabled +label::before {
   display: inline-block;
   width: 30px;
   height: 30px;
-  margin-right: 15px;
+  margin-right: 13px;
   padding: 3px;
 
   vertical-align: top;
@@ -1490,7 +1485,7 @@ input[type="checkbox"]:disabled +label::before {
 .footer-contacts {
   position: absolute;
   right: 27px;
-  top: 60;
+  top: 60px;
   z-index: 10;
 
   width: 250px;
@@ -1676,7 +1671,7 @@ input[type="checkbox"]:disabled +label::before {
 
 .basket-popup {
   top: 60px;
-  right: 27px;
+  right: 0;
   z-index: 50;
 
   box-sizing: border-box;
